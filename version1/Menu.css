@@ -151,6 +151,18 @@ nav ul li a {
     nav ul li a:hover {
         background-color: rgb(59, 59, 59);
     }
+    .drop-a {
+        position: relative;
+    }
+    .symbol {
+        position: absolute;
+        left: 90%;
+        top: 30%;
+        transform: translateX(-100%, -30%);
+        color: rgb(255, 255, 255);
+        opacity: 1;
+        visibility: visible;
+    }
     .nav_links {
         flex-direction: column;
         position: fixed;
@@ -166,26 +178,30 @@ nav ul li a {
         justify-content: center;
         padding: 80px 20px;
     }
-    .symbol {
-        position: absolute;
-        left: 90%;
-        top: 30%;
-        transform: translateX(-100%, -30%);
-        color: rgb(255, 255, 255);
-        opacity: 1;
-        visibility: visible;
-    }
     .dropdown-content {
         position: relative;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
         background-color: transparent;
         padding: 0 2px 0 10px;
         width: 100%;
         box-shadow: none;
+        height: 0;
     }
     .show {
-        display: block;
-        transition: 0.5s ease-in-out;
+        animation: mymove 1s;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.4s ease;
+    }
+    @keyframes mymove {
+        from {
+            top: -10px;
+        }
+        to {
+            top: 0px;
+        }
     }
     /* toggle hiện thanh menubar */
     .nav-active {
