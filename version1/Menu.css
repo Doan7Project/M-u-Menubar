@@ -26,15 +26,19 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    width: 140px;
     position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 20px 30px;
     color: white;
+}
+
+.btnn:hover {
+    color: rgb(19, 180, 230);
+    transition: 0.4s ease-in-out;
 }
 
 .active,
@@ -54,6 +58,33 @@ nav ul li a {
     visibility: hidden;
     padding: 20px;
     display: block;
+    box-shadow: 0px 5px 10px 0px rgb(139, 139, 139);
+}
+
+.dropdown-content a {
+    padding: 10px 30px;
+}
+
+.symbol {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .symbol {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s ease-in-out;
+}
+
+.showSylb {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s ease-in-out;
 }
 
 
@@ -114,27 +145,43 @@ nav ul li a {
     .Menubar .logo img {
         width: 100px;
     }
+    nav ul li a {
+        padding: 15px 30px;
+    }
+    nav ul li a:hover {
+        background-color: rgb(59, 59, 59);
+    }
     .nav_links {
-        padding: 10px;
         flex-direction: column;
         position: fixed;
         left: -100%;
         top: 0px;
         background-color: rgb(49, 47, 47, 0.9);
         display: block;
-        align-items: center;
+        /* align-items: center; */
         width: 100%;
         height: 100%;
         transition: 0.5s ease;
         z-index: 1;
         justify-content: center;
-        padding: 80px 30px;
+        padding: 80px 20px;
+    }
+    .symbol i {
+        display: none;
+    }
+    .symbol {
+        left: 100%;
+        top: 0%;
+        width: 3px;
+        background-color: rgb(107, 107, 107);
     }
     .dropdown-content {
         position: relative;
         display: none;
         background-color: transparent;
-        padding: 0 20px;
+        padding: 0 2px 0 10px;
+        width: 100%;
+        box-shadow: none;
     }
     .show {
         display: block;
