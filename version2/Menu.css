@@ -192,6 +192,14 @@ nav ul li a:hover {
     left: 100%;
 }
 
+.hightpx {
+    height: 500px;
+}
+
+.hightpx img {
+    height: 500px;
+}
+
 
 /* responsive menubar */
 
