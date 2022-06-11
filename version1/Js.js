@@ -6,13 +6,13 @@ dropID.addEventListener('click', function() {
     const symbolshow = document.querySelector('.symbol');
     symbolshow.classList.toggle('showSylb')
         // thay đổi vùng chọn
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("actives");
+    current[0].className = current[0].className.replace(" actives", "");
+    this.className += " actives";
 })
 
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropbtns')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         const symbolshow = document.querySelector('.symbol');
 
@@ -32,12 +32,12 @@ window.onclick = function(event) {
 
 // Add active class to the current button (highlight it)
 var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("btn");
+var btns = header.getElementsByClassName("btns");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+        var current = document.getElementsByClassName("actives");
+        current[0].className = current[0].className.replace(" actives", "");
+        this.className += " actives";
 
         const navshow = document.querySelector('.nav_links');
         navshow.classList.toggle('nav-active');
