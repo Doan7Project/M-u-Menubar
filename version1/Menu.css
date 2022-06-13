@@ -13,10 +13,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(15, 138, 196, 0.9);
+    background-color: rgb(255, 175, 162);
 }
 
-.Menubar div img {
+.logo img {
     width: 150px;
 }
 
@@ -34,18 +34,18 @@ nav ul li a {
     text-decoration: none;
     display: block;
     padding: 0px 30px;
-    color: white;
+    color: rgb(61, 61, 61);
     font-weight: bold;
 }
 
 .btnn:hover {
-    color: rgb(19, 180, 230);
+    color: rgb(255, 255, 255);
     transition: 0.4s ease-in-out;
 }
 
 .actives,
 .btns:hover {
-    color: rgb(19, 180, 230);
+    color: rgb(255, 255, 255);
     transition: 0.4s ease-in-out;
 }
 
@@ -53,7 +53,7 @@ nav ul li a {
 /* drop down menu */
 
 .dropdown-content {
-    background-color: rgb(15, 138, 196, 0.8);
+    background-color: rgb(255, 175, 162);
     width: 200px;
     /* left: 20%; */
     top: 190%;
@@ -140,32 +140,47 @@ nav ul li a {
 
 /* liên hệ và đăng ký */
 
-.signs {
+.consultant {
+    width: 55%;
     position: absolute;
     cursor: pointer;
-    border: 1px solid rgb(255, 171, 171);
-    color: rgb(255, 255, 255);
-    padding: 0.3vw 2vw;
-    font-size: 1vw;
-    background-color: rgba(255, 145, 209, 0.2);
-    left: 40%;
-    top: 50%;
-    transform: translate(-40%, -70%);
+    height: auto;
+    left: 35%;
+    top: 40%;
+    transform: translate(-35%, -40%);
     z-index: 2;
 }
 
-.consultant {
-    position: absolute;
-    cursor: pointer;
-    border: 1px solid rgb(255, 171, 171);
+.consultant .context-1 span {
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+}
+
+.consultant .context-2 span {
+    color: rgb(37, 37, 37);
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.consultant .context-3 span {
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+}
+
+.consultant .context-4 {
+    /* margin-top: 20px; */
     color: rgb(255, 255, 255);
-    padding: 0.3vw 2vw;
-    font-size: 1vw;
-    background-color: rgba(255, 145, 209, 0.2);
-    left: 60%;
-    top: 50%;
-    transform: translate(-60%, -70%);
-    z-index: 2;
+    text-align: center;
+    width: 150px;
+    padding: 10px 0px;
+    /* padding: 20px; */
+    background-color: rgb(255, 175, 162, 0.5);
+    font-size: 14px;
+}
+
+.consultant .context-4:hover {
+    background-color: rgb(255, 175, 162);
+    transition: 0.4s ease-in-out;
 }
 
 
@@ -188,13 +203,14 @@ nav ul li a {
         display: block;
         z-index: 4;
     }
-    .Menubar .logo {
+    /* .Menubar .logo {
         text-align: center;
-    }
-    .Menubar .logo img {
+    } */
+    .logo img {
         width: 100px;
     }
     nav ul li a {
+        color: rgb(65, 65, 65);
         padding: 10px 30px;
         font-weight: bold;
     }
@@ -218,7 +234,7 @@ nav ul li a {
         position: fixed;
         left: -100%;
         top: 0px;
-        background-color: rgb(49, 47, 47, 0.9);
+        background-color: rgba(255, 136, 136, 0.9);
         display: block;
         /* align-items: center; */
         width: 100%;
@@ -267,18 +283,9 @@ nav ul li a {
     .defaultnt {
         left: 100%;
     }
-    /* .signs {
-        padding: 0.4vw 3vw;
-        font-size: 2vw;
-        left: 30%;
-        top: 50%;
-        transform: translate(-30%, -50%);
+    .consultant .context-4 {
+        width: 100px;
+        padding: 5px;
+        font-size: 10px;
     }
-    .consultant {
-        padding: 0.4vw 3vw;
-        font-size: 2vw;
-        left: 70%;
-        top: 50%;
-        transform: translate(-70%, -50%);
-    } */
 }
