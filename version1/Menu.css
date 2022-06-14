@@ -241,7 +241,7 @@ nav ul li a {
         left: -100%;
         top: 0px;
         /* background-color: rgba(255, 136, 136, 0.9); */
-        background-image: linear-gradient(to bottom right, rgba(255, 136, 136, 0.7), rgb(255, 118, 187, 0.3));
+        background-image: linear-gradient(to bottom right, rgba(255, 136, 136, 0.9), rgba(255, 187, 147, 0.7));
         display: block;
         /* align-items: center; */
         width: 100%;
@@ -257,6 +257,7 @@ nav ul li a {
         opacity: 0;
         visibility: hidden;
         background-color: transparent;
+        background-image: linear-gradient(to bottom right, rgba(255, 136, 136, 0.4), rgba(255, 183, 149, 0.4));
         padding: 0;
         width: 100%;
         box-shadow: none;
